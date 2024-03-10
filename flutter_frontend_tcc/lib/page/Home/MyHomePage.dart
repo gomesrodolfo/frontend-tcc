@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_frontend_tcc/page/Menu/MenuItem.dart';
+import 'package:flutter_frontend_tcc/page/ShoppingCart/ShoppingCart.dart';
 
 class MyHomePage extends StatelessWidget {
   const MyHomePage({Key? key});
@@ -80,7 +81,7 @@ class MyHomePage extends StatelessWidget {
             ),
             // Conteúdo da página BIRDS
             const Center(
-              child: Text('Conteúdo da página Pedidos'),
+              child: ShoppingCart(),
             ),
           ],
         ),

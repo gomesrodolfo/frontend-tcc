@@ -12,12 +12,12 @@ class GridListMenuItems extends StatelessWidget {
       subtitle: 'Flower Market',
     ),
     _Photo(
-      assetName: 'assets/images/item.png',
+      assetName: 'assets/images/image_menu_item2.png',
       title: 'Tanjore',
       subtitle: 'Bronze Works',
     ),
     _Photo(
-      assetName: 'assets/images/item.png',
+      assetName: 'assets/images/image_menu_item3.png',
       title: 'Tanjore',
       subtitle: 'Market',
     ),
@@ -27,12 +27,12 @@ class GridListMenuItems extends StatelessWidget {
       subtitle: 'Thanjavur Temple',
     ),
     _Photo(
-      assetName: 'assets/images/item.png',
+      assetName: 'assets/images/image_menu_item2.png',
       title: 'Tanjore',
       subtitle: 'Thanjavur Temple',
     ),
     _Photo(
-      assetName: 'assets/images/item.png',
+      assetName: 'assets/images/image_menu_item3.png',
       title: 'Pondicherry',
       subtitle: 'Salt Farm',
     ),
@@ -42,7 +42,7 @@ class GridListMenuItems extends StatelessWidget {
       subtitle: 'Scooters',
     ),
     _Photo(
-      assetName: 'assets/images/item.png',
+      assetName: 'assets/images/image_menu_item3.png',
       title: 'Chettinad',
       subtitle: 'Silk Maker',
     ),
