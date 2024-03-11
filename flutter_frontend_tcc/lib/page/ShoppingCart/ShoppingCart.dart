@@ -14,7 +14,7 @@ class ShoppingCart extends StatelessWidget {
           fontSize: 24,
           fontWeight: FontWeight.bold,
         ),
-        child: Center(
+        child: const Center(
           child: SpacedItemsList(),
         ),
       ),
@@ -40,40 +40,29 @@ class ShoppingCart extends StatelessWidget {
 }
 
 class SpacedItemsList extends StatelessWidget {
-  const SpacedItemsList({Key? key});
+  const SpacedItemsList({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     const items = 3;
 
-    return LayoutBuilder(builder: (context, constraints) {
-      return SingleChildScrollView(
-        child: ConstrainedBox(
-          constraints: BoxConstraints(minHeight: constraints.maxHeight),
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.start,
-            crossAxisAlignment: CrossAxisAlignment.stretch,
-            children: List.generate(
-              items,
-              (index) {
-                return Column(
-                  children: [
-                    SizedBox(
-                      height: 150,
-                      child: CartItemCard(
-                        productName: 'Spaghetti a Bolonhesa',
-                        productPrice: 29.00,
-                        productImage: 'assets/images/image_menu_item2.png',
-                      ),
-                    ),
-                  ],
-                );
-              },
+    return ListView.builder(
+      itemCount: items,
+      itemBuilder: (context, index) {
+        return Column(
+          children: [
+            SizedBox(
+              height: 150,
+              child: CartItemCard(
+                productName: 'Spaghetti a Bolonhesa',
+                productPrice: 29.00,
+                productImage: 'assets/images/image_menu_item2.png',
+              ),
             ),
-          ),
-        ),
-      );
-    });
+          ],
+        );
+      },
+    );
   }
 }
 
