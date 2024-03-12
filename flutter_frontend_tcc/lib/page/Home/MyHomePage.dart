@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_frontend_tcc/page/Menu/MenuItem.dart';
+import 'package:flutter_frontend_tcc/page/Menu/SampleMenuItem.dart';
 import 'package:flutter_frontend_tcc/page/ShoppingCart/ShoppingCart.dart';
 
 class MyHomePage extends StatelessWidget {
@@ -71,13 +71,8 @@ class MyHomePage extends StatelessWidget {
               ),
             ),
             // Conteúdo da página CATS
-            const Center(
-              child: MenuItem(
-                title: 'Menu',
-                subtitle: 'digital',
-                price: '10.00',
-                image: 'home.png',
-              ),
+            Center(
+              child: SampleMenuItem(),
             ),
             // Conteúdo da página BIRDS
             const Center(
